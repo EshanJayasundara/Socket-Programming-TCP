@@ -1,6 +1,6 @@
 # Socket-Programming
 
-## UDP client and server
+## TCP client and server
 
 ### Prerequisits
 
@@ -10,7 +10,7 @@
 
 > clone the repository to your local computer.Then, Execute following commands in the terminal from the directory whre the receiver_gui.py and sender_gui exists.
 
-> First run this command on the receiver' computer<br/> > `python receiver_gui.py`<br/>
+> First run this command on the receiver's computer<br/> > `python receiver_gui.py`<br/>
 
 <img src="/assets/receiver.png">
 
