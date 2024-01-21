@@ -41,11 +41,11 @@ local_ip = get_local_ip()
 notification.config(text="Your IP: "+local_ip)
 
 def Receive():
-    notification.config(text="receiving...")
+    notification.config(text="port: " + port_entry.get() + " is listning...")
 
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # creating a socket
 
-    server.bind((local_ip, 9999)) # give the IP and Port for new socket
+    server.bind((local_ip, int(port_entry.get()))) # give the IP and Port for new socket
     server.listen() # listning in port 9999
 
     client, addr = server.accept() # accepting any file comming through that socket
