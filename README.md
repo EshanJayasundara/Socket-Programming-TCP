@@ -14,11 +14,13 @@
 
 <img src="/assets/receiver.png">
 
+> port = in between 1024 - 65535 (destination port = receivers port)
+
 > Second run this command on sender's computer</br> > `python sender_gui.py`<br/>
 
 <img src="/assets/sender.png">
 
 > IP = receiver's IP address<br/>
-> port = 9999
+> port = in between 1024 - 65535 (receivers port)
 
 > Finally select a file and click send.

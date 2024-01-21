@@ -8,11 +8,22 @@ window.title("File Receiver")
 frame = tkinter.Frame(window)
 frame.pack()
 
+label_port = tkinter.LabelFrame(frame, text="Port")
+label_port.grid(row=0, column=0, padx=20, pady=10)
+
+port = tkinter.Label(label_port, text="Port")
+port.grid(row=0, column=0)
+port_entry = tkinter.Entry(label_port)
+port_entry.grid(row=1, column=0)
+
+for widget in label_port.winfo_children():
+    widget.grid_configure(padx=90, pady=10)
+
 label_receive = tkinter.LabelFrame(frame, text="Receive Button")
-label_receive.grid(row=0, column=0, padx=20, pady=20)
+label_receive.grid(row=1, column=0, padx=20, pady=10)
 
 notification = tkinter.Label(label_receive, text="")
-notification.grid(row=1, column=0)
+notification.grid(row=2, column=0)
 
 def get_local_ip():
     try:
